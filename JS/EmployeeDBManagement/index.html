@@ -7,6 +7,76 @@
     <title>ManageResource.co</title>
   </head>
   <body>
+    <div class="app">
+      <!-- Header -->
+      <div class="header">
+        <h1>Employee Database Management</h1>
+        <button class="createEmployee">Add Employee</button>
+      </div>
+    </div>
+
+    <div class="employees">
+      <!-- Employees List -->
+      <div class="employees__names">
+        <span class="employees__names--title">Employee List</span>
+        <br />
+        <div class="employees__names--list"></div>
+      </div>
+
+      <!-- Add Emplpoyee Modal -->
+
+      <!-- Single Employee Details -->
+      <div class="employees__single">
+        <span class="employees__single--title">Employee Detail</span>
+        <br />
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+
+    <!-- Add New Employee Modal -->
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        Add a new employee
+
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last name" required />
+        </div>
+        <input
+          type="text"
+          name="imageUrl"
+          placeholder="Image URL (optional)"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="Contect"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date of Birth"
+          class="addEmployee_create--dob"
+          required
+        />
+        <input
+          type="submit"
+          class="addEmployee_create--submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
